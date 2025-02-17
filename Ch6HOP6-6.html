@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighthouse Island Bistro</title>
+    <link href="lighthouse.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Lighthouse Island Bistro</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Locally Roasted Free-Trade Coffee</h2>
+                <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+                <h2>Specialty Pastries</h2>
+                <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Directions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <footer>
+            Copyright &copy; 2020
+        </footer>
+    </div>
+</body>
+</html>
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #00005D;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* Wrapper Styling */
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 960px;
+    max-width: 1200px;
+    background-color: #B3C7E6;
+    color: #000066;
+}
+
+/* Header Styling */
+header {
+    background-color: #869DC7;
+    color: #00005D;
+    text-align: center;
+    font-size: 150%;
+    padding: 10px 10px 155px 10px;
+    background-image: url("lighthouse.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/* Navigation Styling */
+nav {
+    float: right;
+    width: 200px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background-color: #B3C7E6;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    background-color: #B3C7E6;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00005D;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #EAEAEA;
+}
+
+/* Main Content Styling */
+main {
+    background-color: #FFFFFF;
+    color: #000000;
+    margin-right: 220px;
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-style: italic;
+    background-color: #869DC7;
+    color: #FFFFFF;
+    padding: 10px;
+    clear: both;
+}
