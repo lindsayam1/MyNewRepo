@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form 5 - Grid Layout</title>
+  <style>
+    @supports (display: grid) {
+      form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em;
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        width: 60%;
+        min-width: 20em;
+        padding: 1.5em;
+      }
+
+      input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 10em;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="myName">Name:</label>
+    <input type="text" id="myName" name="myName">
+
+    <label for="myEmail">E-mail:</label>
+    <input type="text" id="myEmail" name="myEmail">
+
+    <label for="myComments">Comments:</label>
+    <textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

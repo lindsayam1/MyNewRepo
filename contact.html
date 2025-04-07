@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    form {
+      background-color: #EAEAEA;
+      font-family: Arial, sans-serif;
+      width: 350px;
+      padding: 10px;
+    }
+    label {
+      float: left;
+      clear: left;
+      display: block;
+      width: 100px;
+      padding-right: 10px;
+      margin-top: 10px;
+      text-align: right;
+    }
+    input {
+      display: block;
+      margin-top: 10px;
+    }
+    textarea {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="submit"] {
+      margin-left: 110px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="myName">Name:</label>
+    <input type="text" id="myName" name="myName">
+
+    <label for="myEmail">E-mail:</label>
+    <input type="text" id="myEmail" name="myEmail">
+
+    <label for="myComments">Comments:</label>
+    <textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
