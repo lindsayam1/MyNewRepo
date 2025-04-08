@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #aaa;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    select, input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Music Survey</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="comments">Why do you like music?</label>
+      <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+
+      <label>Favorite Genre:</label>
+      <input type="radio" name="genre" value="Pop"> Pop<br>
+      <input type="radio" name="genre" value="Rock"> Rock<br>
+      <input type="radio" name="genre" value="Country"> Country<br>
+
+      <label for="platform">Favorite music platform:</label>
+      <select id="platform" name="platform" size="3">
+        <option>Spotify</option>
+        <option>Apple Music</option>
+        <option>YouTube Music</option>
+        <option>Amazon Music</option>
+      </select>
+
+      <label for="musicDate">When do you usually listen to music?</label>
+      <input type="date" id="musicDate" name="musicDate"><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+
+    <div class="footer">
+      Created by Lindsay Mason<br>
+      Email: lindsay@email.com
+    </div>
+  </form>
+</body>
+</html>
